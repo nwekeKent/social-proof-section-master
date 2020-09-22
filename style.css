@@ -1,0 +1,223 @@
+@import url("https://fonts.google.com/specimen/Spartan");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(/images/bg-pattern-bottom-mobile.svg),
+    url(/images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right, top left;
+  font-family: "Spartan", Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  margin: 70px auto;
+  padding: 0 25px;
+}
+.wrapper .heading-text {
+  text-align: center;
+  color: hsl(300, 43%, 22%);
+  font-family: "Spartan", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+.wrapper .p-text {
+  color: hsl(303, 10%, 53%);
+  font-weight: 600;
+  font-size: 18.5px;
+  text-align: center;
+  line-height: 28px;
+  margin-top: 30px;
+}
+
+.ratings-div {
+  margin: 40px auto;
+}
+.ratings {
+  background-color: hsl(300, 24%, 96%);
+  font-family: "Spartan", Arial, Helvetica, sans-serif;
+  color: hsl(300, 43%, 22%);
+  font-weight: bolder;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.ratings p {
+  margin-top: 15px;
+}
+
+.wrapper .testimonials {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+}
+
+.testimonies {
+  background-color: hsl(300, 43%, 22%);
+  padding: 50px 35px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 40px;
+  border-radius: 10px;
+}
+.testimonies .details-div {
+  display: flex;
+}
+.testimonies .details-div img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.testimonies .details-div .text {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+.details-div .text p {
+  color: hsl(0, 0%, 100%);
+}
+
+.details-div .text p:last-child {
+  color: hsl(303, 10%, 53%);
+  margin-top: 7px;
+}
+.testimonies .testimony p {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.attribution {
+  text-align: center;
+  padding: 20px 0;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(300, 43%, 22%);
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.attribution a:hover {
+  color: hsl(303, 10%, 53%);
+  letter-spacing: 6px;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    background-image: url(/images/bg-pattern-top-desktop.svg),
+      url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+  }
+  .wrapper {
+    margin: 50px auto;
+    width: 80%;
+  }
+  .top-div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 100px;
+  }
+
+  .wrapper .heading-text {
+    text-align: left;
+    color: hsl(300, 43%, 22%);
+    font-family: "Spartan", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 50px;
+  }
+  .wrapper .p-text {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size: 11px;
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 20px;
+  }
+  .ratings-div {
+    margin: 0, 0;
+  }
+
+  .ratings {
+    background-color: hsl(300, 24%, 96%);
+    font-family: "Spartan", Arial, Helvetica, sans-serif;
+    color: hsl(300, 43%, 22%);
+    font-weight: bolder;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7px;
+  }
+
+  .ratings p {
+    margin-top: 0px;
+  }
+  .ratings1 {
+    transform: translateX(40px);
+  }
+  .ratings2 {
+    transform: translateX(80px);
+  }
+
+  .wrapper .testimonials {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 150px;
+  }
+
+  .testimonies {
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px 35px 10px 35px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px;
+    border-radius: 10px;
+    height: 200px;
+  }
+
+  .testimonies .details-div {
+    display: flex;
+  }
+
+  .testimonies .details-div img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonies .details-div .text {
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  .testimonies1 {
+    transform: translateY(15px);
+  }
+  .testimonies2 {
+    transform: translateY(30px);
+  }
+
+  .details-div .text p {
+    color: hsl(0, 0%, 100%);
+  }
+
+  .details-div .text p:last-child {
+    color: hsl(303, 10%, 53%);
+    margin-top: 7px;
+  }
+
+  .testimonies .testimony p {
+    color: hsl(0, 0%, 100%);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
